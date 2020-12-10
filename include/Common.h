@@ -1,0 +1,80 @@
+#pragma once
+#include <cstdint>
+
+namespace youth_zhao{
+
+enum McuSeries {
+    SERIES_F0,  //!< STM32 F0
+    SERIES_F1,  //!< STM32 F1
+    SERIES_F4   //!< STM32 F4
+  };
+
+enum PeripheralName {
+    PERIPHERAL_ADC1,                //!< PERIPHERAL_ADC1
+    PERIPHERAL_ADC2,                //!< PERIPHERAL_ADC1
+    PERIPHERAL_ADC3,                //!< PERIPHERAL_ADC1
+    PERIPHERAL_BACKUP,              //!< PERIPHERAL_BACKUP
+    PERIPHERAL_CRC,                 //!< PERIPHERAL_CRC
+    PERIPHERAL_DAC1,                //!< PERIPHERAL_DAC1
+    PERIPHERAL_DAC2,                //!< PERIPHERAL_DAC2
+    PERIPHERAL_DMA1,                //!< PERIPHERAL_DMA1
+    PERIPHERAL_DMA2,                //!< PERIPHERAL_DMA2
+    PERIPHERAL_GPIO,                //!< PERIPHERAL_GPIO
+    PERIPHERAL_FSMC,                //!< PERIPHERAL_FSMC
+    PERIPHERAL_FMC,                 //!< PERIPHERAL_FMC
+    PERIPHERAL_HASH,                //!< PERIPHERAL_HASH
+    PERIPHERAL_I2C1,                //!< PERIPHERAL_I2C1
+    PERIPHERAL_I2C2,                //!< PERIPHERAL_I2C2
+    PERIPHERAL_I2C3,                //!< PERIPHERAL_I2C3
+    PERIPHERAL_I2S2,                //!< PERIPHERAL_I2S2
+    PERIPHERAL_I2S3,                //!< PERIPHERAL_I2S3
+    PERIPHERAL_MAC,                 //!< PERIPHERAL_MAC
+    PERIPHERAL_MAC_REMAP,           //!< PERIPHERAL_MAC_REMAP
+    PERIPHERAL_OTG_FS,              //!< internal OTG FS PHY
+    PERIPHERAL_OTG_HS,              //!< internal OTG HS PHY
+    PERIPHERAL_POWER,               //!< PERIPHERAL_POWER
+    PERIPHERAL_RNG,                 //!< PERIPHERAL_RNG
+    PERIPHERAL_SDIO,                //!< PERIPHERAL_SDIO
+    PERIPHERAL_SPI1,                //!< PERIPHERAL_SPI1
+    PERIPHERAL_SPI1_REMAP,          //!< PERIPHERAL_SPI1_REMAP
+    PERIPHERAL_SPI2,                //!< PERIPHERAL_SPI2
+    PERIPHERAL_SPI3,                //!< PERIPHERAL_SPI3
+    PERIPHERAL_SPI3_REMAP,          //!< PERIPHERAL_SPI3_REMAP
+    PERIPHERAL_SYSCFG,              //!< PERIPHERAL_SYSCFG
+    PERIPHERAL_TIMER1,              //!< PERIPHERAL_TIMER1
+    PERIPHERAL_TIMER2,              //!< PERIPHERAL_TIMER2
+    PERIPHERAL_TIMER3,              //!< PERIPHERAL_TIMER3
+    PERIPHERAL_TIMER4,              //!< PERIPHERAL_TIMER4
+    PERIPHERAL_TIMER5,              //!< PERIPHERAL_TIMER5
+    PERIPHERAL_TIMER6,              //!< PERIPHERAL_TIMER6
+    PERIPHERAL_TIMER7,              //!< PERIPHERAL_TIMER7
+    PERIPHERAL_TIMER8,              //!< PERIPHERAL_TIMER8
+    PERIPHERAL_TIMER9,              //!< PERIPHERAL_TIMER9
+    PERIPHERAL_TIMER10,             //!< PERIPHERAL_TIMER10
+    PERIPHERAL_TIMER11,             //!< PERIPHERAL_TIMER11
+    PERIPHERAL_TIMER12,             //!< PERIPHERAL_TIMER12
+    PERIPHERAL_TIMER13,             //!< PERIPHERAL_TIMER13
+    PERIPHERAL_TIMER14,             //!< PERIPHERAL_TIMER14
+    PERIPHERAL_TIMER15,             //!< PERIPHERAL_TIMER15
+    PERIPHERAL_TIMER16,             //!< PERIPHERAL_TIMER16
+    PERIPHERAL_TIMER17,             //!< PERIPHERAL_TIMER17
+    PERIPHERAL_USART1,              //!< PERIPHERAL_USART1
+    PERIPHERAL_USART1_REMAP,        //!< PERIPHERAL_USART1_REMAP
+    PERIPHERAL_USART2,              //!< PERIPHERAL_USART2
+    PERIPHERAL_USART2_REMAP,        //!< PERIPHERAL_USART2_REMAP
+    PERIPHERAL_USART3,              //!< PERIPHERAL_USART3
+    PERIPHERAL_USART3_PARTIAL_REMAP,  //!< PERIPHERAL_USART3_PARTIAL_REMAP
+    PERIPHERAL_USART3_FULL_REMAP,   //!< PERIPHERAL_USART3_FULL_REMAP
+    PERIPHERAL_UART4,               //!< PERIPHERAL_UART4
+    PERIPHERAL_UART5,               //!< PERIPHERAL_UART5
+    PERIPHERAL_USART6,              //!< PERIPHERAL_USART6
+    PERIPHERAL_CAN1,				        //!< PERIPHERAL_CAN1
+    PERIPHERAL_CAN2					        //!< PERIPHERAL_CAN2
+  };
+
+enum class Endian {
+    LITTLE_ENDIAN_MCU,  //!< little endian
+    BIG_ENDIAN_MCU      //!< big endian
+  };
+
+}
